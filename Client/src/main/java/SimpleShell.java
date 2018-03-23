@@ -4,14 +4,21 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class SimpleShell {
 
+    private static final Logger logger = Logger.getGlobal();
+
+    public SimpleShell() {
+    }
 
     public static void prettyPrint(String output) {
         // yep, make an effort to format things nicely, eh?
         System.out.println(output);
     }
+
+
     public static void main(String[] args) throws java.io.IOException {
 
         YouAreEll webber = new YouAreEll();
